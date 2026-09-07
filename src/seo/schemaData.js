@@ -10,16 +10,38 @@ export function getOrganizationSchema() {
     '@id': `${SEO_CONFIG.siteUrl}/#organization`,
     name: SEO_CONFIG.business.name,
     legalName: SEO_CONFIG.business.legalName,
+    alternateName: SEO_CONFIG.alternateNames,
     url: SEO_CONFIG.siteUrl,
     logo: {
       '@type': 'ImageObject',
       url: `${SEO_CONFIG.siteUrl}/Logo1.png`,
-      caption: 'PENTA PRIZM Logo',
+      caption: 'Penta Prizm Logo',
     },
     image: `${SEO_CONFIG.siteUrl}/Hero.png`,
     description: SEO_CONFIG.defaultDescription,
     telephone: SEO_CONFIG.business.telephone,
     email: SEO_CONFIG.business.email,
+    knowsAbout: [
+      'Branding',
+      'Brand Identity Design',
+      'Creative Content Creation',
+      '4K Video Production',
+      'Cinematography',
+      'Commercial Photography',
+      'Web Development',
+      'Mobile App Development',
+      'UI/UX Design',
+      'Performance Marketing',
+      'Digital Marketing',
+      'Search Engine Optimization (SEO)',
+      'Meta Ads',
+      'Google Ads',
+    ],
+    areaServed: [
+      { '@type': 'City', name: 'Kochi' },
+      { '@type': 'State', name: 'Kerala' },
+      { '@type': 'Country', name: 'India' },
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: SEO_CONFIG.business.address.streetAddress,
@@ -38,6 +60,68 @@ export function getOrganizationSchema() {
         availableLanguage: ['English', 'Malayalam', 'Hindi'],
       },
     ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Penta Prizm Creative & Technology Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Branding & Identity Design',
+            url: `${SEO_CONFIG.siteUrl}/branding`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Creative Content Creation',
+            url: `${SEO_CONFIG.siteUrl}/content-creation`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: '4K Video Production & Brand Films',
+            url: `${SEO_CONFIG.siteUrl}/video-production`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Web Development & UI/UX',
+            url: `${SEO_CONFIG.siteUrl}/web-development`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Mobile Application Engineering',
+            url: `${SEO_CONFIG.siteUrl}/app-development`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Marketing Strategy & Consulting',
+            url: `${SEO_CONFIG.siteUrl}/marketing`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Digital Marketing & Growth',
+            url: `${SEO_CONFIG.siteUrl}/digital-marketing`,
+          },
+        },
+      ],
+    },
   };
 }
 
@@ -50,11 +134,21 @@ export function getLocalBusinessSchema() {
     '@type': 'ProfessionalService',
     '@id': `${SEO_CONFIG.siteUrl}/#localbusiness`,
     name: SEO_CONFIG.business.name,
+    legalName: SEO_CONFIG.business.legalName,
+    alternateName: SEO_CONFIG.alternateNames,
     image: `${SEO_CONFIG.siteUrl}/Hero.png`,
     url: SEO_CONFIG.siteUrl,
     telephone: SEO_CONFIG.business.telephone,
     email: SEO_CONFIG.business.email,
     priceRange: SEO_CONFIG.business.priceRange,
+    knowsAbout: [
+      'Branding',
+      'Creative Content Creation',
+      'Video Production',
+      'Web Development',
+      'Mobile App Development',
+      'Digital Marketing',
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: SEO_CONFIG.business.address.streetAddress,
@@ -97,11 +191,20 @@ export function getWebSiteSchema() {
     '@id': `${SEO_CONFIG.siteUrl}/#website`,
     url: SEO_CONFIG.siteUrl,
     name: SEO_CONFIG.siteName,
+    alternateName: SEO_CONFIG.alternateNames,
     description: SEO_CONFIG.defaultDescription,
     publisher: {
       '@id': `${SEO_CONFIG.siteUrl}/#organization`,
     },
     inLanguage: 'en-IN',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SEO_CONFIG.siteUrl}/portfolio?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
   };
 }
 

@@ -24,9 +24,10 @@ export default function HomePage({
   return (
     <>
       <SEOHead
-        title={null}
-        description="Penta Prizm is a creative and technology-driven company offering branding, content creation, video production, web development, app development, marketing, and digital marketing solutions."
+        title="Penta Prizm | Official Website | Branding, Tech & Digital Studio"
+        description="Official website of Penta Prizm. We are a creative and technology-driven studio in Kochi, Kerala specializing in branding, content creation, 4K video production, web development, app development, and digital marketing."
         canonicalUrl="/"
+        keywords="Penta Prizm, Penta Prizm Official, PENTA PRIZM, pentaprizm, pentaprizm.in, Penta-Prizm, Penta Prizm Kochi, Penta Prizm Kerala, branding agency Kochi, video production Kerala, web development Kochi, digital marketing agency Kochi"
         schemas={schemas}
       />
 

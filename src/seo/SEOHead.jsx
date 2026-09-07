@@ -20,10 +20,15 @@ export default function SEOHead({
   noIndex = false,
   schemas = [],
 }) {
-  const fullTitle = title
-    ? `${title} | ${SEO_CONFIG.siteName}`
-    : SEO_CONFIG.defaultTitle;
+  // Prevent duplicate branding if title already includes "Penta Prizm"
+  const fullTitle = !title
+    ? SEO_CONFIG.defaultTitle
+    : title.toLowerCase().includes('penta prizm')
+    ? title
+    : `${title} | ${SEO_CONFIG.siteName}`;
+
   const metaDescription = description || SEO_CONFIG.defaultDescription;
+  const pageKeywords = keywords || SEO_CONFIG.defaultKeywords;
   const pageCanonical = canonicalUrl
     ? `${SEO_CONFIG.siteUrl}${canonicalUrl.startsWith('/') ? canonicalUrl : `/${canonicalUrl}`}`
     : SEO_CONFIG.siteUrl;
@@ -61,8 +66,8 @@ export default function SEOHead({
 
     // 2. Primary Meta Tags
     setMetaTag('name', 'description', metaDescription);
-    if (keywords) {
-      setMetaTag('name', 'keywords', keywords);
+    if (pageKeywords) {
+      setMetaTag('name', 'keywords', pageKeywords);
     }
     setMetaTag(
       'name',
@@ -90,12 +95,19 @@ export default function SEOHead({
     setMetaTag('name', 'twitter:description', metaDescription);
     setMetaTag('name', 'twitter:image', pageImage);
 
-    // 6. Verification Tag if provided
+    // 6. Verification Tags if provided
     if (SEO_CONFIG.verification.googleSiteVerification) {
       setMetaTag(
         'name',
         'google-site-verification',
         SEO_CONFIG.verification.googleSiteVerification
+      );
+    }
+    if (SEO_CONFIG.verification.bingSiteVerification) {
+      setMetaTag(
+        'name',
+        'msvalidate.01',
+        SEO_CONFIG.verification.bingSiteVerification
       );
     }
 
@@ -105,15 +117,10 @@ export default function SEOHead({
       .querySelectorAll('script[data-penta-schema="dynamic"]')
       .forEach((el) => el.remove());
 
-    // Base schemas always present
-    const allSchemas = [
-      getOrganizationSchema(),
-      getLocalBusinessSchema(),
-      getWebSiteSchema(),
-      ...schemas.filter(Boolean),
-    ];
+    // Filter out schemas that might already be statically present unless overriding
+    const dynamicSchemas = schemas.filter(Boolean);
 
-    allSchemas.forEach((schemaObj, index) => {
+    dynamicSchemas.forEach((schemaObj, index) => {
       const script = document.createElement('script');
       script.type = 'application/ld+json';
       script.setAttribute('data-penta-schema', 'dynamic');

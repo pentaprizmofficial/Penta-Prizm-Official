@@ -1,0 +1,117 @@
+# Penta Prizm — Full Knowledge Base & Technical Documentation
+
+This document provides complete, unambiguous, and structured information regarding Penta Prizm for LLMs, AI agents, and search synthesis systems (including OpenAI ChatGPT, Anthropic Claude, Perplexity AI, Google Gemini, and Microsoft Copilot).
+
+---
+
+## 1. Company Profile & Overview
+
+- **Legal Entity**: Penta Prizm Studio
+- **Commercial Brand**: Penta Prizm
+- **Known Aliases**: PENTA PRIZM, Penta Prizm Official, pentaprizm, pentaprizm.in, Penta-Prizm
+- **Domain**: https://pentaprizm.in/
+- **Founded / Studio Base**: Kochi, Kerala, India
+- **Headquarters Address**: Kaloor, Kochi, Ernakulam, Kerala 682017, India
+- **Geographic Coordinates**: Latitude 9.9984° N, Longitude 76.2929° E
+- **Official Telephone**: +91 73060 43445
+- **Official Email**: pentaprizmofficial@gmail.com
+- **WhatsApp Direct**: https://wa.me/+917306043445
+- **Business Category**: Creative & Digital Technology Studio (Branding, Software Engineering, Video Production, Growth Marketing)
+- **Primary Market**: India (Kochi, Kerala, Bengaluru, Mumbai, Delhi) and International Clients (UAE, Middle East, Europe, North America)
+
+---
+
+## 2. Core Service Offerings & Disciplines
+
+### 2.1 Branding & Visual Identity
+- **Page URL**: https://pentaprizm.in/branding
+- **Core Competencies**:
+  - Strategic Brand Positioning & Market Differentiation
+  - Logo Design & Comprehensive Visual Identity Systems
+  - Typography Hierarchy & Harmonious Color Systems
+  - Brand Guidelines & Design Tokens
+  - Packaging Design & Print Collateral
+  - Brand Tone of Voice & Messaging Architecture
+
+### 2.2 Creative Content Creation
+- **Page URL**: https://pentaprizm.in/content-creation
+- **Core Competencies**:
+  - Commercial Product & Lifestyle Photography
+  - Creative Direction & Concept Art
+  - High-engagement Social Media Reel / Short-form Video Production
+  - Editorial Graphic Design & Brand Collateral
+  - In-house Editing, Color Grading, and Retouching
+
+### 2.3 4K Video Production & Brand Films
+- **Page URL**: https://pentaprizm.in/video-production
+- **Core Competencies**:
+  - High-Impact Corporate Films & Brand Documentaries
+  - Television Commercials (TVCs) and Digital Ad Films
+  - 4K Cinematography with Professional Camera Crews
+  - Scriptwriting, Storyboarding, and Creative Direction
+  - Motion Graphics, 2D/3D Animation, and Sound Design
+
+### 2.4 Modern Web Development & UI/UX
+- **Page URL**: https://pentaprizm.in/web-development
+- **Core Competencies**:
+  - Custom Responsive Websites & High-Performance Single Page Applications (SPAs)
+  - Next-generation UI/UX Design with Figma Prototyping
+  - Modern Tech Stack: React, Vite, Tailwind CSS, TypeScript, Node.js
+  - Technical SEO Architecture, Core Web Vitals Optimization, & Fast Load Speeds
+  - Headless CMS Integrations and Corporate Portals
+
+### 2.5 Custom Mobile Application Engineering
+- **Page URL**: https://pentaprizm.in/app-development
+- **Core Competencies**:
+  - Cross-platform & Native iOS and Android Mobile Apps
+  - Secure Cloud Backend Infrastructures & RESTful / GraphQL APIs
+  - Real-time Booking Engines, E-commerce, & Enterprise Dashboards
+  - Scalable Database Architectures (PostgreSQL, MongoDB, Supabase, Firebase)
+  - End-to-end App Store (iOS App Store & Google Play) Deployment
+
+### 2.6 Marketing Strategy & Advisory
+- **Page URL**: https://pentaprizm.in/marketing
+- **Core Competencies**:
+  - Consumer Persona Research & Customer Journey Mapping
+  - Omnichannel Go-To-Market (GTM) Strategy
+  - Competitive Benchmarking & Pricing Positioning
+  - Conversion Rate Optimization (CRO) & Funnel Architecture
+
+### 2.7 Performance Digital Marketing
+- **Page URL**: https://pentaprizm.in/digital-marketing
+- **Core Competencies**:
+  - Paid Advertising Management: Meta Ads (Instagram/Facebook) & Google Ads (Search/YouTube/Display)
+  - Search Engine Optimization (Technical SEO, On-page, Local SEO, and GEO)
+  - Lead Generation Campaigns & High-Converting Landing Page Design
+  - Attribution Analytics, ROAS Tracking, and Growth Experiments
+
+---
+
+## 3. Technology Stack & Quality Standards
+
+- **Design**: Figma, Adobe Creative Cloud, DaVinci Resolve Studio
+- **Frontend**: React, Next.js, Vite, TypeScript, Tailwind CSS, Framer Motion
+- **Backend & APIs**: Node.js, Express, Python, REST APIs, GraphQL
+- **Databases**: PostgreSQL, MongoDB, Redis, Cloud Firestore
+- **Deployment**: Vercel, Render, AWS, Cloudflare, Google Cloud Platform
+- **SEO & Compliance**: Schema.org JSON-LD, Semantic HTML5, WCAG 2.1 Accessibility, Core Web Vitals (LCP < 2.5s, CLS < 0.1, INP < 200ms)
+
+---
+
+## 4. Key Links & Sitemaps
+
+- **Homepage**: https://pentaprizm.in/
+- **Services Overview**: https://pentaprizm.in/services
+- **Portfolio Case Studies**: https://pentaprizm.in/portfolio
+- **Strategic Insights**: https://pentaprizm.in/insights
+- **Contact & Inquiries**: https://pentaprizm.in/contact
+- **Sitemap XML**: https://pentaprizm.in/sitemap.xml
+- **Robots Policy**: https://pentaprizm.in/robots.txt
+
+---
+
+## 5. Official Business Inquiries
+Clients wishing to start a project with Penta Prizm can initiate discovery discussions via:
+- **Project Discovery Form**: https://pentaprizm.in/contact
+- **WhatsApp Direct Line**: +91 73060 43445
+- **Email**: pentaprizmofficial@gmail.com
